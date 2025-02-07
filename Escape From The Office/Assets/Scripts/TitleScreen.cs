@@ -17,6 +17,11 @@ public class TitleScreen : MonoBehaviour
     {
 
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
