@@ -4729,6 +4729,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keys
       objectReference: {fileID: 0}
+    - target: {fileID: 3540493208227275972, guid: 6c9151c28bef5604eb0008539163bd7c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickable
+      objectReference: {fileID: 0}
     - target: {fileID: 4209048691927006846, guid: 6c9151c28bef5604eb0008539163bd7c,
         type: 3}
       propertyPath: m_LocalPosition.x
