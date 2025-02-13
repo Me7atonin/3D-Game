@@ -1506,22 +1506,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!111 &684158487
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684158484}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c94efcfabcea15b41afccd4a13a56264, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: c94efcfabcea15b41afccd4a13a56264, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &690816257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4665,10 +4649,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2773065125394180602, guid: c9fadd6cec5741541b5ee2781ddfad22,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 684158487}
     - targetCorrespondingSourceObject: {fileID: 2773065125394180602, guid: c9fadd6cec5741541b5ee2781ddfad22,
         type: 3}
       insertIndex: -1
