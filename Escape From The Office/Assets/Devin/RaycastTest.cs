@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 public class Interaction : MonoBehaviour
 {
     private Animator animator;
@@ -14,6 +15,7 @@ public class Interaction : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     animator = GetComponent<Animator>();
+                    EventTrigger AudioSource = GetComponent<EventTrigger>();
                 }
             }
         }
