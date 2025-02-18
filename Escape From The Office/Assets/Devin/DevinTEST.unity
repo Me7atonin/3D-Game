@@ -2299,12 +2299,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6647612526857620654}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1226945443 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7757616998333116547, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
-    type: 3}
-  m_PrefabInstance: {fileID: 6647612526857620654}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1226945445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2318,17 +2312,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 9
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1226945443}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: Play
-          m_Mode: 3
+        - m_Target: {fileID: 1226945446}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: PlayOneShot
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 8300000, guid: b6a9f3a1ecfaf324aa9e98f9d5e79b39,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
