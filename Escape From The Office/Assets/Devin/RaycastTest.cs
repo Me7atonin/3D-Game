@@ -3,10 +3,7 @@ using System.Collections;
 public class Interaction : MonoBehaviour
 {
     private Animator animator;
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+
         void Update()
     {
         RaycastHit hit;
@@ -16,7 +13,7 @@ public class Interaction : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    
+                    animator = GetComponent<Animator>();
                 }
             }
         }
