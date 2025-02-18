@@ -4595,6 +4595,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeycardDoor1
       objectReference: {fileID: 0}
+    - target: {fileID: 2773065125394180602, guid: c9fadd6cec5741541b5ee2781ddfad22,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
+      objectReference: {fileID: 0}
     - target: {fileID: 3256164818630259520, guid: c9fadd6cec5741541b5ee2781ddfad22,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4848,6 +4853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KeyDoor2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205119199414303971, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
