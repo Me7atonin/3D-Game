@@ -2450,6 +2450,18 @@ MonoBehaviour:
   interactText: {fileID: 0}
   playerInventory: {fileID: 1466916877}
   interactRange: 3
+--- !u!114 &1039628694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5459516696750175237, guid: 055ee8d387fd08245b582934d1f57b24,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466916876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1074101169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4155,6 +4167,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1771345853}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1782575748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1692326655349094800, guid: 9ff0e9f53ea4919408616875787cdbaa,
+    type: 3}
+  m_PrefabInstance: {fileID: 6843101956985532310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1782575752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782575748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902e7b8851429e04688144b616969011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 0
+  itemName: Keycard
+  itemIcon: {fileID: 21300000, guid: 7c502f9d448dd0848b5a9cee22321617, type: 3}
+--- !u!114 &1782575753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782575748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6acb32d96050791459713f34a9fee984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotImage: {fileID: 1039628694}
+  currentItem: {fileID: 1782575752}
 --- !u!1 &2009172030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5385,10 +5432,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 899776889280682053, guid: 9ff0e9f53ea4919408616875787cdbaa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1692326655349094800, guid: 9ff0e9f53ea4919408616875787cdbaa,
         type: 3}
       propertyPath: m_Name
       value: KeyCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692326655349094800, guid: 9ff0e9f53ea4919408616875787cdbaa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Item
       objectReference: {fileID: 0}
     - target: {fileID: 2033246094618633002, guid: 9ff0e9f53ea4919408616875787cdbaa,
         type: 3}
@@ -5443,7 +5500,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1692326655349094800, guid: 9ff0e9f53ea4919408616875787cdbaa,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782575752}
+    - targetCorrespondingSourceObject: {fileID: 1692326655349094800, guid: 9ff0e9f53ea4919408616875787cdbaa,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782575753}
   m_SourcePrefab: {fileID: 100100000, guid: 9ff0e9f53ea4919408616875787cdbaa, type: 3}
 --- !u!1001 &7135993626804664682
 PrefabInstance:
