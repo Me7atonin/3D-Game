@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
-  - Item
+  - Keycard
+  - Key
+  - Interact
   - Door
   layers:
   - Default
@@ -14,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Interactable
   - 
   - 
   - 
