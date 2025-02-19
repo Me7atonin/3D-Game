@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 24b03d1efb5b0cc4a915a3e8c4702b2b
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Jose Flores/1st level layout.unity
+    guid: fc8feb0b675c3af45873b56bb6d2ec9a
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: dd0d12e5b98bafc4bba6a1cc85d74eae
