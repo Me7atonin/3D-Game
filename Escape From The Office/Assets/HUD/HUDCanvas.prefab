@@ -312,8 +312,8 @@ GameObject:
   - component: {fileID: 4826802955617648295}
   - component: {fileID: 2776530195926650532}
   - component: {fileID: 574231040914326088}
-  - component: {fileID: 6923373993367950990}
-  - component: {fileID: 2308406461116367407}
+  - component: {fileID: 3575638628225127853}
+  - component: {fileID: 2032842661804452057}
   m_Layer: 5
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6923373993367950990
+--- !u!114 &3575638628225127853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,14 +416,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7691425882701451374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c77eb82113cd4542a63fd64a7d7d2fe, type: 3}
+  m_Script: {fileID: 11500000, guid: cc5988dbe56b9cb45b03d5fc1ba62a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  itemImages: []
---- !u!114 &2308406461116367407
+  interactDistance: 3
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  inventory: {fileID: 0}
+  interactHUD: {fileID: 0}
+  hudText: {fileID: 0}
+--- !u!114 &2032842661804452057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -432,7 +435,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7691425882701451374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6acb32d96050791459713f34a9fee984, type: 3}
+  m_Script: {fileID: 11500000, guid: ba6656c75ad942b40b1e85cfbf8a0bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotImage: {fileID: 5459516696750175237}
+  hasKey: 0
+  hasKeyCard: 0
