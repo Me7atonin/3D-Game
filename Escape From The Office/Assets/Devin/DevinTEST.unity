@@ -1613,7 +1613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &641704879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2513,6 +2513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HUDCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691425882701451374, guid: 055ee8d387fd08245b582934d1f57b24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4854,7 +4859,7 @@ PrefabInstance:
     - target: {fileID: 3840926866276296030, guid: b04244ffb2981714f8b26fb9c335b017,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7655350236691672969, guid: b04244ffb2981714f8b26fb9c335b017,
         type: 3}
