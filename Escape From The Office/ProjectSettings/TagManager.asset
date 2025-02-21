@@ -8,7 +8,6 @@ TagManager:
   - Key
   - Interact
   - Door
-  - Item
   - Enemy
   - KeyCard
   - Undefined
