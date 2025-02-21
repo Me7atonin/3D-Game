@@ -7,7 +7,7 @@ public class ToSecretWinScreen : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Plane")
         {
             SceneManager.LoadSceneAsync(5);
