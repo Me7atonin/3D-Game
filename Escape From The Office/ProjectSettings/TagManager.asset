@@ -11,6 +11,8 @@ TagManager:
   - Item
   - Enemy
   - KeyCard
+  - Undefined
+  - Plane
   layers:
   - Default
   - TransparentFX
