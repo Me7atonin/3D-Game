@@ -21,10 +21,12 @@ public class TestPauseMenu : MonoBehaviour
         {
             Time.timeScale = 0;
             GetComponent<Canvas>().enabled = true;
+            Cursor.lockState = CursorLockMode.Confined;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0)
         {
             Resume();
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
     }
