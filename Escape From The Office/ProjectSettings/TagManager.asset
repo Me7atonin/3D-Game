@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
-  - Keycard
   - Key
   - Interact
   - Door
   - Item
   - Enemy
+  - KeyCard
   layers:
   - Default
   - TransparentFX
