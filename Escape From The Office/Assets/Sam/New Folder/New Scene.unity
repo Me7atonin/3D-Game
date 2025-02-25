@@ -1018,6 +1018,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8427632968461706841, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0606879
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427632968461706841, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0606879
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427632968461706841, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0606879
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427632968461706841, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.0392623
       objectReference: {fileID: 0}
@@ -1071,7 +1086,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyDoor2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7757616998333116547, guid: 7c2e17edb29ec57428a5b09a3c8b3c20, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1380,6 +1396,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3256164818630259520, guid: c9fadd6cec5741541b5ee2781ddfad22,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0606879
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256164818630259520, guid: c9fadd6cec5741541b5ee2781ddfad22,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0606879
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256164818630259520, guid: c9fadd6cec5741541b5ee2781ddfad22,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0606879
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256164818630259520, guid: c9fadd6cec5741541b5ee2781ddfad22,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.04362
       objectReference: {fileID: 0}
@@ -1428,7 +1459,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 683948124614700827, guid: c9fadd6cec5741541b5ee2781ddfad22, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
