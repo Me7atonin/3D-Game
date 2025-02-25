@@ -2700,6 +2700,74 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 82a07730d2eb498419c6816783194557, type: 3}
+--- !u!1001 &1015501680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1196.7737
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7882782
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 180.06331
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217490666925643120, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702242990898319306, guid: 2d795f036fe5f284392f7b782b3001cc,
+        type: 3}
+      propertyPath: m_Name
+      value: PizzaOnPlate1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d795f036fe5f284392f7b782b3001cc, type: 3}
 --- !u!1001 &1074101169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6302,3 +6370,4 @@ SceneRoots:
   - {fileID: 3485435253652649845}
   - {fileID: 7224898752475445062}
   - {fileID: 1751684813}
+  - {fileID: 1015501680}
