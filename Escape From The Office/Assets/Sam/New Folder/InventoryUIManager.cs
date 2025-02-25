@@ -5,21 +5,21 @@ public class InventoryUIManager : MonoBehaviour
     public GameObject keyImage;       // UI Image for the key
     public GameObject keyCardImage;   // UI Image for the keycard
 
-    private Inventory inventory;  // Reference to the Inventory script
+    // Make these public so you can see them in the Inspector
+    public bool hasKey = false;  // Track if the player has the key
+    public bool hasKeyCard = false;  // Track if the player has the keycard
 
     private void Start()
     {
-        inventory = GetComponent<Inventory>();  // Get the Inventory script on the same GameObject
-
-        // Initially deactivate both UI images
+        // Initially, both images should be inactive
         keyImage.SetActive(false);
         keyCardImage.SetActive(false);
     }
 
     private void Update()
     {
-        // Check if the player has the key and keycard in their inventory
-        if (inventory.hasKey)
+        // Update UI images based on whether the player has the items
+        if (hasKey)
         {
             keyImage.SetActive(true);  // Show the key image
         }
@@ -28,7 +28,7 @@ public class InventoryUIManager : MonoBehaviour
             keyImage.SetActive(false);  // Hide the key image
         }
 
-        if (inventory.hasKeyCard)
+        if (hasKeyCard)
         {
             keyCardImage.SetActive(true);  // Show the keycard image
         }
@@ -36,5 +36,41 @@ public class InventoryUIManager : MonoBehaviour
         {
             keyCardImage.SetActive(false);  // Hide the keycard image
         }
+    }
+
+    // Methods to add or remove items from the inventory
+    public void AddItem(string itemTag)
+    {
+        if (itemTag == "Key")
+        {
+            hasKey = true;  // Add the key to the inventory
+        }
+        else if (itemTag == "KeyCard")
+        {
+            hasKeyCard = true;  // Add the keycard to the inventory
+        }
+    }
+
+    public void UseItem(string itemTag)
+    {
+        if (itemTag == "Key" && hasKey)
+        {
+            hasKey = false;  // Remove the key from the inventory
+        }
+        else if (itemTag == "KeyCard" && hasKeyCard)
+        {
+            hasKeyCard = false;  // Remove the keycard from the inventory
+        }
+    }
+
+    // Accessor methods to check if the player has the items
+    public bool HasKey()
+    {
+        return hasKey;
+    }
+
+    public bool HasKeyCard()
+    {
+        return hasKeyCard;
     }
 }

@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e01252b53dda62a4cb3a9623c27e64eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.19
+      value: 0.0606879
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e01252b53dda62a4cb3a9623c27e64eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.19
+      value: 0.0606879
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e01252b53dda62a4cb3a9623c27e64eb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.19
+      value: 0.0606879
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e01252b53dda62a4cb3a9623c27e64eb,
         type: 3}
@@ -115,15 +115,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e01252b53dda62a4cb3a9623c27e64eb,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7757616998333116547}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e01252b53dda62a4cb3a9623c27e64eb,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1566492374124369152}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e01252b53dda62a4cb3a9623c27e64eb,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5573969307319197760}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e01252b53dda62a4cb3a9623c27e64eb,
         type: 3}
       insertIndex: -1
@@ -235,27 +227,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8322175979765793202}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &7757616998333116547
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205119199414303971}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bb3b4f376bd0adf46893b5b2c47fe3ca, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &1566492374124369152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -263,7 +234,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9205119199414303971}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b6a9f3a1ecfaf324aa9e98f9d5e79b39, type: 3}
@@ -352,36 +323,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5573969307319197760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205119199414303971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1566492374124369152}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: PlayOneShot
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: b6a9f3a1ecfaf324aa9e98f9d5e79b39,
-              type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &8647831301315705844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiresKeyCard: 0
   requiresKey: 1
-  doorAnimator: {fileID: 0}
 --- !u!65 &7899858643201221050
 BoxCollider:
   m_ObjectHideFlags: 0

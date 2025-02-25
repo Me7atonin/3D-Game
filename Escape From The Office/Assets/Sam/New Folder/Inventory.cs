@@ -1,33 +1,31 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public bool hasKey = false;
-    public bool hasKeyCard = false;
+    private List<string> items = new List<string>();  // List to store the items
 
-    // Add item to the inventory (Key or KeyCard)
+    // Add item to the inventory
     public void AddItem(string itemTag)
     {
-        if (itemTag == "Key")
+        if (!items.Contains(itemTag))
         {
-            hasKey = true;
-        }
-        else if (itemTag == "KeyCard")
-        {
-            hasKeyCard = true;
+            items.Add(itemTag);  // Add the item to the inventory
         }
     }
 
-    // Remove item from the inventory (when used or the level ends)
-    public void RemoveItem(string itemTag)
+    // Remove item from the inventory
+    public void UseItem(string itemTag)
     {
-        if (itemTag == "Key")
+        if (items.Contains(itemTag))
         {
-            hasKey = false;
+            items.Remove(itemTag);  // Remove the item from the inventory
         }
-        else if (itemTag == "KeyCard")
-        {
-            hasKeyCard = false;
-        }
+    }
+
+    // Check if the inventory contains the item
+    public bool HasItem(string itemTag)
+    {
+        return items.Contains(itemTag);  // Returns true if the item exists in the inventory
     }
 }

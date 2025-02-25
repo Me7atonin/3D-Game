@@ -3,67 +3,89 @@ using UnityEngine;
 
 public class ItemInteractionUI : MonoBehaviour
 {
-    public float interactDistance = 3f;  // Distance at which the player can interact with items
-    public LayerMask interactableLayer;  // Layer for interactable objects (items like Key, KeyCard, and Door)
-    public GameObject interactHUD;  // UI Text for "Press E to Grab"
-    public TextMeshProUGUI hudText;  // HUD text component to display different messages
-    public Inventory inventory;  // Reference to the inventory to check for items
+    public float interactDistance = 3f;
+    public LayerMask interactableLayer;
+    public GameObject interactHUD;
+    public TextMeshProUGUI hudText;
+    public InventoryUIManager inventoryUIManager;  // Reference to InventoryUIManager
+    public AudioClip doorDestroySound;
 
     private void Update()
     {
+        if (inventoryUIManager == null || interactHUD == null || hudText == null)
+        {
+            return;
+        }
+
         RaycastHit hit;
 
-        // Raycast from the center of the camera (the player's viewpoint)
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactDistance, interactableLayer))
         {
-            // If the player is close to an item like Key or KeyCard
             if (hit.collider.CompareTag("Key") || hit.collider.CompareTag("KeyCard"))
             {
-                // Show "Press E to Grab" text
                 interactHUD.SetActive(true);
                 hudText.text = "Press E to Grab";
 
-                // If the player presses 'E', pick up the item
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    // Add the item to the inventory
-                    inventory.AddItem(hit.collider.tag);
-
-                    // Hide the interaction UI text after picking up
+                    inventoryUIManager.AddItem(hit.collider.tag);  // Add item to inventory
                     interactHUD.SetActive(false);
-
-                    // Destroy the item after picking it up
                     Destroy(hit.collider.gameObject);
                 }
             }
-            // If the player is close to a door
             else if (hit.collider.CompareTag("Door"))
             {
-                // Show "Press E to Interact" text
                 interactHUD.SetActive(true);
                 hudText.text = "Press E to Open";
 
-                // If the player presses 'E' and has the right key
-                if ((inventory.hasKeyCard && hit.collider.GetComponent<DoorInteraction>().requiresKeyCard) ||
-                    (inventory.hasKey && hit.collider.GetComponent<DoorInteraction>().requiresKey))
+                var doorInteraction = hit.collider.GetComponent<DoorInteraction>();
+                if (doorInteraction == null)
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
+                    return;
+                }
+
+                bool canOpen = false;
+
+                if ((inventoryUIManager.HasKeyCard() && doorInteraction.requiresKeyCard) ||
+                    (inventoryUIManager.HasKey() && doorInteraction.requiresKey))
+                {
+                    canOpen = true;  // We can open the door if the right item is in the inventory
+                }
+
+                if (canOpen && Input.GetKeyDown(KeyCode.E))
+                {
+                    PlayDoorDestroySound();
+                    Destroy(hit.collider.gameObject);
+
+                    // Now we need to uncheck the checkbox and turn off the image of the used item
+                    if (inventoryUIManager.HasKeyCard())
                     {
-                        // Trigger the door opening animation
-                        hit.collider.GetComponent<Animator>().SetTrigger("OpenDoor");
+                        inventoryUIManager.UseItem("KeyCard");  // Remove the keycard
+                        inventoryUIManager.keyCardImage.SetActive(false);  // Turn off the image for the keycard
+                    }
+                    else if (inventoryUIManager.HasKey())
+                    {
+                        inventoryUIManager.UseItem("Key");  // Remove the key
+                        inventoryUIManager.keyImage.SetActive(false);  // Turn off the image for the key
                     }
                 }
             }
             else
             {
-                // Hide the UI text if nothing is being hovered over
                 interactHUD.SetActive(false);
             }
         }
         else
         {
-            // Hide the UI text if nothing is being hovered over
             interactHUD.SetActive(false);
+        }
+    }
+
+    private void PlayDoorDestroySound()
+    {
+        if (doorDestroySound != null)
+        {
+            AudioSource.PlayClipAtPoint(doorDestroySound, transform.position);
         }
     }
 }
