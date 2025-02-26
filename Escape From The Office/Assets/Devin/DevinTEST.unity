@@ -122,6 +122,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &24620464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 698906110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &114347946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1232,6 +1238,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.8800049
       objectReference: {fileID: 0}
+    - target: {fileID: 4253012990419024489, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253012990419024491, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1364,7 +1380,11 @@ PrefabInstance:
     - {fileID: 6245080681541293901, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7400677500434752734, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 24620464}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5126527961139664765, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
         type: 3}
@@ -1378,10 +1398,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 794552373}
-    - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 794552381}
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
 --- !u!1 &455096838 stripped
 GameObject:
@@ -2006,6 +2022,79 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: c85d0df752c06324fbb58edf1bc602ca, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1001 &698906110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 794552374}
+    m_Modifications:
+    - target: {fileID: 2368173449748959161, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_Name
+      value: CharacterModel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368173449748959161, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 22984598c48eddc4fa9ee138d3209a0c, type: 3}
 --- !u!1001 &705395725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2072,7 +2161,7 @@ PrefabInstance:
     - target: {fileID: 9131859547997866441, guid: ede375fa023cef64cbef944cb32947b5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2462,19 +2551,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113ad898d35a9ab458df90013fa37399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &794552381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &794552374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 437038127}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794552364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6a47ab461ea2eb40b5bb7577484ffa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactDistance: 3
 --- !u!43 &847903846
 Mesh:
   m_ObjectHideFlags: 0
