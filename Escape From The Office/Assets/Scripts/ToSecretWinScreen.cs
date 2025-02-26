@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ToSecretWinScreen : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    public float interactDistance = 1f;
+
+    private void Update()
     {
-        //Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.tag == "Plane")
+        RaycastHit hit;
+
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit))
         {
-            SceneManager.LoadSceneAsync(5);
+            if (hit.collider.CompareTag("Plane"))
+            {
+                SceneManager.LoadSceneAsync(5);
+            }
         }
     }
 }
