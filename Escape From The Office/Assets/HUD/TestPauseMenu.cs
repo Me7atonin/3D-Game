@@ -35,6 +35,7 @@ public class TestPauseMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         GetComponent<Canvas>().enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ExitGame()
