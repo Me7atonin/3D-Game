@@ -23,6 +23,7 @@ public class TitleScreen : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Controls()
@@ -35,7 +36,8 @@ public class TitleScreen : MonoBehaviour
         SceneManager.LoadSceneAsync(3);
     }
 
-    public void QuitGame() {
-    Application.Quit();
+    public void QuitGame() 
+    {
+        Application.Quit();
     }
 }
