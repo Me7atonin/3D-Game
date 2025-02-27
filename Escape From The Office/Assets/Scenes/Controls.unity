@@ -1077,9 +1077,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "W = move forward\t          A = move  left\nS = Move Backwards\t         
-    D = Move Right\nE = Interact/Pick up items\t          F = Drop Items\nShift =
-    Sprint\t\t          Space = jump"
+  m_text: "W = Move Forward\t          A = Move Left\nS = Move Backwards\t         
+    D = Move Right\nE = Interact/Pick up items\t          Shift = Sprint\nSpace =
+    Jump"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bdc25e761ac4244aa971ec0145bce86, type: 2}
   m_sharedMaterial: {fileID: -2972150015715494839, guid: 0bdc25e761ac4244aa971ec0145bce86,
@@ -1273,7 +1273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3feea616d9c80e540a71f792507d35fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Play
 --- !u!114 &2018278766
 MonoBehaviour:
   m_ObjectHideFlags: 0
