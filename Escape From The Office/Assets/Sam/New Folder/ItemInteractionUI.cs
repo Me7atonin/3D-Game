@@ -9,6 +9,12 @@ public class ItemInteractionUI : MonoBehaviour
     public TextMeshProUGUI hudText;
     public InventoryUIManager inventoryUIManager;  // Reference to InventoryUIManager
     public AudioClip doorDestroySound;
+    private ObjectiveManager objectiveManager;
+
+    private void Start()
+    {
+        objectiveManager = FindObjectOfType<ObjectiveManager>(); // Get the ObjectiveManager
+    }
 
     private void Update()
     {
@@ -31,6 +37,22 @@ public class ItemInteractionUI : MonoBehaviour
                     inventoryUIManager.AddItem(hit.collider.tag);  // Add item to inventory
                     interactHUD.SetActive(false);
                     Destroy(hit.collider.gameObject);
+
+                    // Add new objectives when picking up a key or keycard
+                    if (hit.collider.CompareTag("Key"))
+                    {
+                        // Remove the "Find the key" objective when the player picks up the key
+                        objectiveManager.RemoveObjective("Find the key to open this door.");
+                        // Add the objective to "Open the Key Door"
+                        objectiveManager.AddObjective("Open the Key Door.");
+                    }
+                    else if (hit.collider.CompareTag("KeyCard"))
+                    {
+                        // Remove the "Find the keycard" objective when the player picks up the keycard
+                        objectiveManager.RemoveObjective("Find the keycard to open this door.");
+                        // Add the objective to "Open the KeyCard Door"
+                        objectiveManager.AddObjective("Open the KeyCard Door.");
+                    }
                 }
             }
             else if (hit.collider.CompareTag("Door"))
@@ -55,18 +77,16 @@ public class ItemInteractionUI : MonoBehaviour
                 if (canOpen && Input.GetKeyDown(KeyCode.E))
                 {
                     PlayDoorDestroySound();
-                    Destroy(hit.collider.gameObject);
+                    Destroy(hit.collider.gameObject); // Destroy the door after it opens
 
-                    // Now we need to uncheck the checkbox and turn off the image of the used item
-                    if (inventoryUIManager.HasKeyCard())
+                    // Remove the appropriate "Open the Key Door" or "Open the KeyCard Door" objective after using the key
+                    if (inventoryUIManager.HasKeyCard() && doorInteraction.requiresKeyCard)
                     {
-                        inventoryUIManager.UseItem("KeyCard");  // Remove the keycard
-                        inventoryUIManager.keyCardImage.SetActive(false);  // Turn off the image for the keycard
+                        objectiveManager.RemoveObjective("Open the KeyCard Door.");
                     }
-                    else if (inventoryUIManager.HasKey())
+                    else if (inventoryUIManager.HasKey() && doorInteraction.requiresKey)
                     {
-                        inventoryUIManager.UseItem("Key");  // Remove the key
-                        inventoryUIManager.keyImage.SetActive(false);  // Turn off the image for the key
+                        objectiveManager.RemoveObjective("Open the Key Door.");
                     }
                 }
             }
