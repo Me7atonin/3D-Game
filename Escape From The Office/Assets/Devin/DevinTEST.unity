@@ -1231,7 +1231,7 @@ PrefabInstance:
     - target: {fileID: 4253012990419024489, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4253012990419024491, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
         type: 3}
@@ -1400,6 +1400,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 794552376}
+    - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 794552384}
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
 --- !u!1 &455096838 stripped
 GameObject:
@@ -2110,6 +2114,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2368173449748959161, guid: 22984598c48eddc4fa9ee138d3209a0c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3140875464554059011, guid: 22984598c48eddc4fa9ee138d3209a0c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2675,6 +2684,19 @@ MonoBehaviour:
   keyCardImage: {fileID: 0}
   hasKey: 0
   hasKeyCard: 0
+--- !u!114 &794552384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794552364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a47ab461ea2eb40b5bb7577484ffa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDistance: 1
 --- !u!43 &847903846
 Mesh:
   m_ObjectHideFlags: 0

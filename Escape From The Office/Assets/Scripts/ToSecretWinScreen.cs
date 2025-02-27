@@ -17,6 +17,7 @@ public class ToSecretWinScreen : MonoBehaviour
             if (hit.collider.CompareTag("Plane"))
             {
                 SceneManager.LoadSceneAsync(5);
+                Cursor.lockState = CursorLockMode.Confined;
             }
         }
     }
