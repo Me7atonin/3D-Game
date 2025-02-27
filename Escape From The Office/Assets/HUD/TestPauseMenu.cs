@@ -41,5 +41,6 @@ public class TestPauseMenu : MonoBehaviour
     public void ExitGame()
     {
         SceneManager.LoadSceneAsync(0);
+        Time.timeScale = 1;
     }
 }
