@@ -76,17 +76,19 @@ public class ItemInteractionUI : MonoBehaviour
 
                 if (canOpen && Input.GetKeyDown(KeyCode.E))
                 {
-                    PlayDoorDestroySound();
+                    PlayDoorDestroySound();  // Play the sound
                     Destroy(hit.collider.gameObject); // Destroy the door after it opens
 
                     // Remove the appropriate "Open the Key Door" or "Open the KeyCard Door" objective after using the key
                     if (inventoryUIManager.HasKeyCard() && doorInteraction.requiresKeyCard)
                     {
                         objectiveManager.RemoveObjective("Open the KeyCard Door.");
+                        inventoryUIManager.UseItem("KeyCard"); // Remove keycard from inventory and HUD
                     }
                     else if (inventoryUIManager.HasKey() && doorInteraction.requiresKey)
                     {
                         objectiveManager.RemoveObjective("Open the Key Door.");
+                        inventoryUIManager.UseItem("Key"); // Remove key from inventory and HUD
                     }
                 }
             }
@@ -101,6 +103,7 @@ public class ItemInteractionUI : MonoBehaviour
         }
     }
 
+    // Ensure there's only one PlayDoorDestroySound method
     private void PlayDoorDestroySound()
     {
         if (doorDestroySound != null)

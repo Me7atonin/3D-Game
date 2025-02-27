@@ -56,12 +56,15 @@ public class InventoryUIManager : MonoBehaviour
         if (itemTag == "Key" && hasKey)
         {
             hasKey = false;  // Remove the key from the inventory
+            keyImage.SetActive(false);  // Hide the key image in the HUD
         }
         else if (itemTag == "KeyCard" && hasKeyCard)
         {
             hasKeyCard = false;  // Remove the keycard from the inventory
+            keyCardImage.SetActive(false);  // Hide the keycard image in the HUD
         }
     }
+
 
     // Accessor methods to check if the player has the items
     public bool HasKey()
