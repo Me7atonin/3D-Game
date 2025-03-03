@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ToSecretWinScreen : MonoBehaviour
 {
-    public float interactDistance = 1f;
 
     private void Update()
     {
