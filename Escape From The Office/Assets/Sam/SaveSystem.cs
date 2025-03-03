@@ -6,37 +6,38 @@ public class SaveSystem : MonoBehaviour
 {
     string password = "1234567890";
     CharacterController characterController;
-    // Start is called before the first frame update
+    
     void Start()
     {
         characterController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Save();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Load();
-        }
+        }*/
     }
 
     public void Save()
     {
         //string result = EncryptDecryptData("a");
         //Debug.Log(result);
-        SaveData myData = new SaveData(); 
-        myData.x = transform.position.x;
-        myData.y = transform.position.y;
-        myData.z = transform.position.z;
-        myData.level = 0;
+        Checkpoint myData = new Checkpoint();
+        //myData.x = transform.position.x;
+        //myData.y = transform.position.y;
+        //myData.z = transform.position.z;
+        myData.levelName = "Level1";
         string myDataString = JsonUtility.ToJson(myData);
-        myDataString = EncryptDecryptData(myDataString);
-        string file = Application.persistentDataPath + "/" + gameObject.name + "json";
+        //myDataString = EncryptDecryptData(myDataString);
+        //string file = Application.persistentDataPath + "/" + gameObject.name + "json";
+        string file = Application.persistentDataPath + "/" + gameObject.name + "_checkpoint.json";
         System.IO.File.WriteAllText(file, myDataString);
         //Debug.Log(file);
     }
@@ -64,7 +65,13 @@ public class SaveSystem : MonoBehaviour
         }
         return result;
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SaveTrigger"))
+        {
+            Save();
+        }
+    }
 }
 
 [System.Serializable]
@@ -74,4 +81,10 @@ public class SaveData
     public float y;
     public float z;
     public int level;
+}
+
+[System.Serializable]
+public class Checkpoint
+{
+    public string levelName;
 }
