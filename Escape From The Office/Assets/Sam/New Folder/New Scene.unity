@@ -415,12 +415,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 543535222}
   m_SourcePrefab: {fileID: 100100000, guid: fd62ee4d0f127b842bf325a4076fae31, type: 3}
---- !u!82 &309463779 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3091629559952945974, guid: c9fadd6cec5741541b5ee2781ddfad22,
-    type: 3}
-  m_PrefabInstance: {fileID: 1659678428}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &309463783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -531,18 +525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450385710}
   m_CullTransparentMesh: 1
---- !u!114 &491445086 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6636507961408196858, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 625868506}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a3264bb472dda40ae34b03119f9892, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &543535216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fd62ee4d0f127b842bf325a4076fae31,
@@ -588,26 +570,6 @@ PrefabInstance:
       propertyPath: interactHUD
       value: 
       objectReference: {fileID: 658162305}
-    - target: {fileID: 6245080681541293901, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
-        type: 3}
-      propertyPath: doorDestroySound
-      value: 
-      objectReference: {fileID: 8300000, guid: b6a9f3a1ecfaf324aa9e98f9d5e79b39, type: 3}
-    - target: {fileID: 6245080681541293901, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
-        type: 3}
-      propertyPath: inventoryUIManager
-      value: 
-      objectReference: {fileID: 491445086}
-    - target: {fileID: 6245080681541293901, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
-        type: 3}
-      propertyPath: keyDoorDestroySound
-      value: 
-      objectReference: {fileID: 780325304}
-    - target: {fileID: 6245080681541293901, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
-        type: 3}
-      propertyPath: keyCardDoorDestroySound
-      value: 
-      objectReference: {fileID: 309463779}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -861,12 +823,6 @@ RectTransform:
 --- !u!1 &761594548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9205119199414303971, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
-    type: 3}
-  m_PrefabInstance: {fileID: 1186206757}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &780325304 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1566492374124369152, guid: 7c2e17edb29ec57428a5b09a3c8b3c20,
     type: 3}
   m_PrefabInstance: {fileID: 1186206757}
   m_PrefabAsset: {fileID: 0}
