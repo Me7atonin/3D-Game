@@ -1101,7 +1101,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "W = Move Forward\t          A = Move Left\nS = Move Backwards\t         
     D = Move Right\nE = Interact/Pick up items\t          Shift = Sprint\nSpace =
-    Jump                         1 = save"
+    Jump"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bdc25e761ac4244aa971ec0145bce86, type: 2}
   m_sharedMaterial: {fileID: -2972150015715494839, guid: 0bdc25e761ac4244aa971ec0145bce86,
