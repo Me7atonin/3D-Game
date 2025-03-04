@@ -12,6 +12,7 @@ TagManager:
   - KeyCard
   - Undefined
   - Plane
+  - SaveTrigger
   layers:
   - Default
   - TransparentFX
