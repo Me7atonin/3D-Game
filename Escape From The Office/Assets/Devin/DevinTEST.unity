@@ -4889,6 +4889,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8875925578040401697, guid: 37edef210f052dc42b5dc44a8e65e226,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6141,6 +6146,11 @@ PrefabInstance:
       objectReference: {fileID: 994579545}
     - target: {fileID: 2428517082375727840, guid: 5388d7d3904bb9747a7a2eb75334e327,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428517082375727840, guid: 5388d7d3904bb9747a7a2eb75334e327,
+        type: 3}
       propertyPath: healthBarUI
       value: 
       objectReference: {fileID: 161357554}
@@ -6148,6 +6158,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NestedParent_Unpack Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3379500251742125945, guid: 5388d7d3904bb9747a7a2eb75334e327,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
