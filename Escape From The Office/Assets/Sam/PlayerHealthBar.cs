@@ -11,8 +11,6 @@ public class PlayerHealth : MonoBehaviour
     private float damageInterval = 0.5f;
     private float damageAmount = 10f;
     private float lastDamageTime;
-    public string gameOverSceneName = "GameOverScene";
-
     void Start()
     {
         currentHealth = maxHealth;
@@ -29,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            LoadGameOverScene();
+            SceneManager.GetActiveScene();
         }
     }
 
@@ -64,10 +62,5 @@ public class PlayerHealth : MonoBehaviour
         {
             healthBarUI.fillAmount = currentHealth / maxHealth;
         }
-    }
-
-    void LoadGameOverScene()
-    {
-        SceneManager.LoadScene(gameOverSceneName);
     }
 }
