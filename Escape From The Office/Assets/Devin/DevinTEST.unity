@@ -4817,27 +4817,7 @@ PrefabInstance:
     - target: {fileID: 1909732634963730054, guid: 37edef210f052dc42b5dc44a8e65e226,
         type: 3}
       propertyPath: m_Name
-      value: Empty
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552037282648681485, guid: 37edef210f052dc42b5dc44a8e65e226,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.9433962
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552037282648681485, guid: 37edef210f052dc42b5dc44a8e65e226,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.9433962
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552037282648681485, guid: 37edef210f052dc42b5dc44a8e65e226,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.9433962
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552037282648681485, guid: 37edef210f052dc42b5dc44a8e65e226,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294046193
+      value: HUD Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 5630040103544663570, guid: 37edef210f052dc42b5dc44a8e65e226,
         type: 3}
@@ -4888,11 +4868,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875925578040401697, guid: 37edef210f052dc42b5dc44a8e65e226,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
