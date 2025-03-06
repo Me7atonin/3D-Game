@@ -1,8 +1,11 @@
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
+using UnityEngine;
 
 [System.Serializable]
-public class SaveData
+public class SaveData : MonoBehaviour
 {
+    MonoBehaviour m_Instance;
     public float playerX;
     public float playerY;
     public float playerZ;
