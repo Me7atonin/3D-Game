@@ -13,6 +13,7 @@ TagManager:
   - Undefined
   - Plane
   - SaveTrigger
+  - Ground
   layers:
   - Default
   - TransparentFX
